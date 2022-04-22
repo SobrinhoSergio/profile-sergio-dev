@@ -29,7 +29,7 @@ const RedesSociais: React.FC = () => {
       {icone.map((value, index) => {
         return (
           <li key={index}>
-            <a href={value.name}> {value.i}</a>
+            <a href={value.name} target="_blank"> {value.i}</a>
           </li>
         );
       })}
