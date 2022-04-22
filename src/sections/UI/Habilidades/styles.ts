@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Habilidades = styled.div`
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 3rem;
-    row-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 3rem;
+  row-gap: 4rem;
 
   .habilidade {
     padding: 40px 20px;
@@ -24,8 +24,10 @@ export const Habilidades = styled.div`
     text-align: center;
   }
 
-  .conhecimento span i {
+  .conhecimento .icon {
     font-size: 6rem;
+    color: var(--color-headings);
+    margin: 0 auto;
   }
 
   .conhecimento h3 {
