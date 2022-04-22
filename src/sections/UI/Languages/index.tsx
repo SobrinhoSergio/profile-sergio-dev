@@ -1,6 +1,6 @@
 import { Linguagens } from "./styles";
 
-const Linguagem: React.FC = () => {
+const LinguagensArticle: React.FC = () => {
   const tecnologias = [
     {
       tec: "HTML5"
@@ -53,4 +53,4 @@ const Linguagem: React.FC = () => {
   );
 };
 
-export default Linguagem;
+export default LinguagensArticle;

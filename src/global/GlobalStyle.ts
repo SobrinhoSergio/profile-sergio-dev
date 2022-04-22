@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
+
+
 :root {
   --bg: #161616;
   --bg-panel: #181818;
@@ -59,13 +61,22 @@ body {
   background: transparent;
 }
 
-.container {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .destaque {
   color: var(--color-headings);
+}
+
+@keyframes navLinkFade{
+
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+
+  to{
+      opacity: 1;
+      transform: translateX(0);
+  }
+
 }
 `;
 

@@ -2,6 +2,7 @@ import { Appliance } from "./styles";
 
 import Title from "../../components/Title";
 import Container from "../../components/Container";
+
 import Languages from "../UI/Languages";
 
 const ApplianceSection: React.FC = () => {

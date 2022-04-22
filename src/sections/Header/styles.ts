@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header`
   background-color: var(--bg-panel);
   position: fixed;
-  top: 0;
+  top: 30px;
   z-index: 99;
   width: 100%;
 

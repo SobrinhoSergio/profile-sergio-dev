@@ -2,7 +2,7 @@ import { Habilidades } from "./styles";
 
 import Text from "../../../components/Text";
 
-const Hab: React.FC = () => {
+const HabilidadesArticle: React.FC = () => {
   const skills = [
     {
       title: "Programação",
@@ -38,4 +38,4 @@ const Hab: React.FC = () => {
   );
 };
 
-export default Hab;
+export default HabilidadesArticle;

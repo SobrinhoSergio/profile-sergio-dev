@@ -18,7 +18,7 @@ const PortfolioSection: React.FC = () => {
               GitHub.
             </Text>
             <Button>
-              <a href="#">Meu GitHub 💡 </a>
+              <a href="https://github.com/SobrinhoSergio">Meu GitHub 💡 </a>
             </Button>
           </aside>
         </article>
