@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { bg } from "../../assets";
+import { bg2 } from "../../assets";
 
 export const Home = styled.main`
-  background-image: url(${bg});
+  background-image: url(${bg2});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -17,51 +17,19 @@ export const Home = styled.main`
     text-align: center;
   }
 
-  .principal h2 {
+  .principal h2{
     font-size: 4.5rem;
     margin: 25px 0;
-    color: #3664ff;
-  }
+    color: var(--color-headings);
+    font-style: italic;
+}
+
 
   .principal h1 {
     font-size: 3.5rem;
     color: #c4c1b3;
   }
 
-  #maquina::after {
-    content: "|";
-    opacity: 1;
-    margin-left: 5px;
-    display: inline-block;
-    animation: blink 0.7s infinite;
-  }
-
-  @keyframes blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-
-  @keyframes scroll-down {
-    0% {
-      opacity: 0;
-      transform: translate3d(0, -15px, 0);
-    }
-    30% {
-      opacity: 0;
-    }
-    60% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: translate3d(0, 10px, 0);
-    }
-  }
 
   @media (max-width: 700px){
 

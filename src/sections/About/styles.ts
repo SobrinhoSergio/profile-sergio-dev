@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const About = styled.main`
   padding: 120px 0;
+  background: ${(props) => props.theme.colors.bgPanel};
 
   .sobre-min {
     display: flex;

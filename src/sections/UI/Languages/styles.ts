@@ -10,9 +10,9 @@ export const Linguagens = styled.div`
 
   ul li {
     font-size: 2rem;
-    color: var(--color-text);
+    color: ${(props) => props.theme.colors.colorText};
     margin: 20px 0;
-    background-color: var(--bg);
+    background: ${(props) => props.theme.colors.bg};
     padding: 10px;
     cursor: pointer;
     transition: transform 0.5s;

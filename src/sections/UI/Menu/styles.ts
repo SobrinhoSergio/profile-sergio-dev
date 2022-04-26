@@ -11,27 +11,24 @@ export const Menu = styled.aside<INav>`
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg);
+  background: ${(props) => props.theme.colors.bg};
   transition: transform 0.4s ease-in;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  
-
-  ul {
+  ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
   }
-
-  
 
   ul li a {
     font-size: 4rem;
     color: var(--color-headings);
   }
+
 `;

@@ -9,7 +9,7 @@ export const Habilidades = styled.div`
 
   .habilidade {
     padding: 40px 20px;
-    background-color: var(--bg);
+    background: ${(props) => props.theme.colors.bg};
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.5s;

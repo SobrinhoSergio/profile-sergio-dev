@@ -8,7 +8,6 @@ export const Logo = styled.span`
   }
 
   @media (max-width: 700px){
-
     font-size: 3rem;
   }
 `;

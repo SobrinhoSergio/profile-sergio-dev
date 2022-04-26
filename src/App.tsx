@@ -2,14 +2,21 @@ import Header from "./sections/Header";
 import Footer from "./sections/Footer";
 import Main from "./sections/Main";
 import GlobalStyle from "./global/GlobalStyle";
+import { ThemeProvider } from "styled-components";
+
+import useToggleTheme from "./hooks/useToggleTheme";
 
 export default function App() {
+
+  const { theme } = useToggleTheme();
   return (
-    <div className="App">
-      <GlobalStyle />
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <GlobalStyle />
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }

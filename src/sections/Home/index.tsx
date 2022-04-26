@@ -8,7 +8,7 @@ const HomeSection: React.FC = () => {
       <Container>
           <hgroup className="principal">
             <h1>Fala, Dev sou </h1>
-            <h2>Sérgio Sobrinho</h2>
+              <h2>Sérgio Sobrinho</h2>
             <h1>
               Desenvolvedor de Software <span className="destaque">Jr.</span>
             </h1>

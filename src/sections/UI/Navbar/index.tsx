@@ -21,7 +21,7 @@ const MenuLinks: React.FC = () => {
   ];
   return (
     <Navbar>
-      <ul className="menu">
+      <ul className="navbar">
         {linksMenu.map((value, index) => {
           return (
             <li key={index}>
