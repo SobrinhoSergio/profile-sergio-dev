@@ -31,4 +31,8 @@ export const Menu = styled.aside<INav>`
     color: var(--color-headings);
   }
 
+  @media (max-width: 700px) {
+    display: none;
+  }
+
 `;

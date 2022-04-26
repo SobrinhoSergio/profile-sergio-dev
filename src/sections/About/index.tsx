@@ -10,7 +10,7 @@ import { profile, curriculo } from "../../assets";
 
 const AboutSection: React.FC = () => {
   return (
-    <About>
+    <About id="about">
       <Container>
         <section className="sobre-min">
           <article className="descricao">

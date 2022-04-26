@@ -7,7 +7,7 @@ import Languages from "../UI/Languages";
 
 const ApplianceSection: React.FC = () => {
   return (
-    <Appliance>
+    <Appliance id="appliance">
       <Container>
         <Title>Tecnologias / Ferramentas 📚</Title>
         <Languages />

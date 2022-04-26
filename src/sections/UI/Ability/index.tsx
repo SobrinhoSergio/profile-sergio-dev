@@ -1,10 +1,10 @@
 import { AiOutlineMobile, AiOutlineDesktop, AiOutlineRocket } from "react-icons/ai";
 
-import { Habilidades } from "./styles";
+import { Ability } from "./styles";
 
 import Text from "../../../components/Text";
 
-const HabilidadesArticle: React.FC = () => {
+const AbilityArticle: React.FC = () => {
   const skills = [
     {
       title: "Programação",
@@ -28,7 +28,7 @@ const HabilidadesArticle: React.FC = () => {
     }
   ];
   return (
-    <Habilidades>
+    <Ability>
       {skills.map((value, index) => {
         return (
           <div key={index} className="habilidade">
@@ -40,8 +40,8 @@ const HabilidadesArticle: React.FC = () => {
           </div>
         );
       })}
-    </Habilidades>
+    </Ability>
   );
 };
 
-export default HabilidadesArticle;
+export default AbilityArticle;

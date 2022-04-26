@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Habilidades = styled.div`
+export const Ability = styled.div`
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -9,7 +9,7 @@ export const Habilidades = styled.div`
 
   .habilidade {
     padding: 40px 20px;
-    background: ${(props) => props.theme.colors.bg};
+    background: ${(props) => props.theme.colors.bgPanel};
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.5s;

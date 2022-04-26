@@ -7,18 +7,19 @@ const MenuLinks: React.FC = () => {
       link: "#home"
     },
     {
-      name: "Sobre",
-      link: "#sobre"
+      name: "About",
+      link: "#about"
     },
     {
-      name: "Habilidades",
-      link: "#hab"
+      name: "skills",
+      link: "#skills"
     },
     {
-      name: "Tecnologias",
-      link: "#tec"
+      name: "Appliance",
+      link: "#appliance"
     }
   ];
+
   return (
     <Navbar>
       <ul className="navbar">

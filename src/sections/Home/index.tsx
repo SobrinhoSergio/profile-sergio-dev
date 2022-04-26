@@ -4,7 +4,7 @@ import Container from "../../components/Container";
 
 const HomeSection: React.FC = () => {
   return (
-    <Home>
+    <Home id="home">
       <Container>
           <hgroup className="principal">
             <h1>Fala, Dev sou </h1>

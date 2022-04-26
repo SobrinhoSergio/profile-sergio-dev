@@ -38,5 +38,11 @@ export const Navbar = styled.nav`
   }
 
   @media (max-width: 700px){
+    .navbar {
+      flex-direction: column;   
+    }
+    .navbar li a {
+      padding: 20px 0;
+    }
   }
 `;

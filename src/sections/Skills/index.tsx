@@ -1,16 +1,16 @@
 import { Skills } from "./styles";
 
-import Habilidades from "../UI/Habilidades";
+import Ability from "../UI/Ability";
 
 import Title from "../../components/Title";
 import Container from "../../components/Container";
 
 const SkillsSection: React.FC = () => {
   return (
-    <Skills>
+    <Skills id="skills">
       <Container>
         <Title>Habilidades / Skills 💼</Title>
-        <Habilidades />
+        <Ability />
       </Container>
     </Skills>
   );

@@ -27,7 +27,7 @@ export const Home = styled.main`
 
   .principal h1 {
     font-size: 3.5rem;
-    color: #c4c1b3;
+    color: var(--cinza);
   }
 
 

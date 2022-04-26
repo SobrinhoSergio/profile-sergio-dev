@@ -12,12 +12,16 @@ export const StyledBurger = styled.div<INav>`
   justify-content: space-around;
   flex-flow: column nowrap;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const Menus = styled.div<INav>`
   width: 4rem;
   height: 0.3rem;
-  background: #AEAEAE;
+  background: var(--cinza);
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;

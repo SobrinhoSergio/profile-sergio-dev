@@ -9,6 +9,6 @@ export default {
 
     bg: "#f5f5f5",
     bgPanel: "#ebebeb",
-    colorText: "#333",
+    colorText: "black",
   },
 };
