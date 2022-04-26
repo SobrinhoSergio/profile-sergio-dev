@@ -12,7 +12,7 @@ export const Menu = styled.aside<INav>`
   width: 100vw;
   height: 100vh;
   background: ${(props) => props.theme.colors.bg};
-  transition: transform 0.4s ease-in;
+  transition: all 150ms ease-in;
   display: flex;
   flex-direction: column;
   justify-content: center;
