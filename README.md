@@ -16,7 +16,8 @@ O Projeto conta com várias seções, que tem como função organizar cada parte
 
 O Projeto está hospedado na Vercel, venha conferir! 
 
-<a href="https://profile-sergio-dev.vercel.app/"><img src="public/assets/imagens/projeto1" alt="img do site"></a>
+<a href="https://profile-sergio-dev.vercel.app/"><img src="./public/assets/imagens/projeto1.png"></a>
+<a href="https://profile-sergio-dev.vercel.app/"><img src="./public/assets/imagens/projeto2.png"></a>
 
 ## Link do Projeto: 
 
