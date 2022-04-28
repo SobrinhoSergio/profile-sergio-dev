@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { bg3 } from "../../assets";
+import { bg } from "../../assets";
 
 export const Home = styled.main`
-  background-image: url(${bg3});
+  background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
