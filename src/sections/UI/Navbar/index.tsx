@@ -19,7 +19,7 @@ const MenuLinks: React.FC = () => {
       link: "#appliance"
     }
   ];
-
+  
   return (
     <Navbar>
       <ul className="navbar">

@@ -25,7 +25,7 @@ const RedesSociais: React.FC = () => {
     }
   ];
   return (
-    <ul>
+    <ul className="redes-sociais">
       {icone.map((value, index) => {
         return (
           <li key={index}>

@@ -37,7 +37,7 @@ export const Navbar = styled.nav`
     color: #fff;
   }
 
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     .navbar {
       flex-direction: column;   
     }

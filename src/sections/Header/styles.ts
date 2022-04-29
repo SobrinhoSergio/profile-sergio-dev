@@ -20,9 +20,11 @@ export const Header = styled.header`
     position: static;
 
     .header {
-      flex-direction: column;
-      justify-content: space-around;
-      height: 30vh;
+      padding: 20px 0;
+    }
+    
+    .dark-mode {
+      display: none;
     }
   }
 `;

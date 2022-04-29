@@ -18,7 +18,11 @@ export const Menu = styled.aside<INav>`
   justify-content: center;
   align-items: center;
 
-  ul{
+  .dark-mode {
+    display: none;
+  }
+
+  .redes-sociais{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,13 +30,23 @@ export const Menu = styled.aside<INav>`
     height: 100vh;
   }
 
-  ul li a {
+  .redes-sociais li a {
     font-size: 4rem;
     color: var(--color-headings);
   }
 
   @media (max-width: 700px) {
-    display: none;
+    
+    .redes-sociais{
+      height: 80vh;
+      justify-content: space-between;
+    }
+
+    
+    .dark-mode {
+      display: block;
+      margin-top: 20px;
+    }
   }
 
 `;

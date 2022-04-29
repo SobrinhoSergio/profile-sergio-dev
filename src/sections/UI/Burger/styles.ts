@@ -12,10 +12,6 @@ export const StyledBurger = styled.div<INav>`
   justify-content: space-around;
   flex-flow: column nowrap;
   cursor: pointer;
-
-  @media (max-width: 700px) {
-    display: none;
-  }
 `;
 
 export const Menus = styled.div<INav>`
