@@ -10,9 +10,9 @@ const GlobalStyles = createGlobalStyle`
 
 :root {
   --color-headings: #0077ff;
-  --branco: #fff;
-  --amarelo: #fdd20d;
-  --cinza: #aeaeae;
+  --white: #fff;
+  --yellow: #fdd20d;
+  --grey: #aeaeae;
 }
 
 ul {

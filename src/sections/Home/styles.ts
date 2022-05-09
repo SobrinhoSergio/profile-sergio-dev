@@ -31,28 +31,19 @@ export const Home = styled.main`
     animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
   }
 
-  @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        /* Altere o Width de acordo com o tamanho do seu texto para utilizar corretamente o efeito */
-        width: 9em;
-    }
-}
 
-@keyframes blinkCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, 0.75);
-    }
-    to {
-        border-right-color: transparent;
-    }
-}
+  @keyframes blinkCursor {
+      from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+          border-right-color: transparent;
+      }
+  }
 
   .principal h1 {
     font-size: 3.5rem;
-    color: var(--cinza);
+    color: var(--grey);
   }
 
   @media (max-width: 700px){

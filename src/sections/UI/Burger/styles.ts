@@ -17,7 +17,7 @@ export const StyledBurger = styled.div<INav>`
 export const Menus = styled.div<INav>`
   width: 4rem;
   height: 0.3rem;
-  background: var(--cinza);
+  background: var(--grey);
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;

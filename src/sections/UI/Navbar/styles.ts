@@ -1,48 +1,62 @@
 import styled from "styled-components";
 
+import { Link } from 'react-scroll'
+
 export const Navbar = styled.nav`
-
   background: ${(props) => props.theme.colors.bgPanel};
+`;
 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+export const NavMenu = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    flex-direction: column;   
   }
+`;
 
-  .navbar li {
-    text-align: center;
-    cursor: pointer;
-    border-radius: 3px;
+
+export const NavItem = styled.li`
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
+  width: 100%;
+ 
+  &:hover {
+    background-color: var(--color-headings);
     transition: all 0.3s;
-    width: 100%;
   }
 
-  .navbar li:hover {
-    background-color: #3664ff;
-    transition: all 0.3s;
-  }
-
-  .navbar li a {
+  a {
     font-weight: 600;
     display: inline-block;
-    color: var(--cinza);
+    color: var(--grey);
     font-size: 1.8rem;
     padding: 10px 0;
     width: 100%;
   }
 
-  .navbar li a:hover {
-    color: #fff;
+  a:hover {
+    color: var(--white);
+  }
+`;
+
+export const NavLink = styled(Link)`
+  font-weight: 600;
+  display: inline-block;
+  color: var(--grey);
+  font-size: 1.8rem;
+  padding: 10px 0;
+  width: 100%;
+
+  &:hover {
+    color: var(--white);
   }
 
   @media (max-width: 700px) {
-    .navbar {
-      flex-direction: column;   
-    }
-    .navbar li a {
-      padding: 20px 0;
-    }
+    padding: 20px 0;
   }
 `;

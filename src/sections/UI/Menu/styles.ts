@@ -12,7 +12,7 @@ export const Menu = styled.aside<INav>`
   width: 100vw;
   height: 100vh;
   background: ${(props) => props.theme.colors.bg};
-  transition: all 150ms ease-in;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,6 @@ export const Menu = styled.aside<INav>`
       justify-content: space-between;
     }
 
-    
     .dark-mode {
       display: block;
       margin-top: 20px;

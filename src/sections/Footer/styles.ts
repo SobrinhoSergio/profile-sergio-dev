@@ -12,11 +12,36 @@ export const Footer = styled.footer`
   .dev .i {
     margin-top: 30px;
     font-weight: normal;
+    text-align: center;
+   
   }
 
   .dev .i a {
     color: var(--color-headings);
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .dev p{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+    font-size: 2.0rem;
+    
+  }
+
+  .dev p img{
+    width: 3.0rem;
+    animation: spinning 5s infinite linear;
+  }
+
+  @keyframes spinning {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
   }
 
   @media (max-width: 700px){

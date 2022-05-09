@@ -1,5 +1,7 @@
-import { Navbar } from "./styles";
+import * as S from "./styles";
 
+import { animateScroll } from 'react-scroll'
+ 
 const MenuLinks: React.FC = () => {
   const linksMenu = [
     {
@@ -17,21 +19,35 @@ const MenuLinks: React.FC = () => {
     {
       name: "Appliance",
       link: "#appliance"
+    },
+    {
+      name: "Contact",
+      link: "#contact"
     }
   ];
   
   return (
-    <Navbar>
-      <ul className="navbar">
+    <S.Navbar>
+      <S.NavMenu>
         {linksMenu.map((value, index) => {
           return (
-            <li key={index}>
-              <a href={value.link}> {value.name}</a>
-            </li>
+            <S.NavItem key={index}>
+              <S.NavLink 
+                to={value.link}
+		smooth={true}
+		duration={500}
+                spy={true}
+                exact={true}
+                offset={-80}
+                                
+              > 
+                {value.name}
+              </S.NavLink>
+            </S.NavItem>
           );
         })}
-      </ul>
-    </Navbar>
+      </S.NavMenu>
+    </S.Navbar>
   );
 };
 
