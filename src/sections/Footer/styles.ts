@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { bg2 } from "../../assets";
 
-export const Footer = styled.footer`  
+export const Footer = styled.footer` 
+
   .dev {
     display: flex;
     flex-direction: column;

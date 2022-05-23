@@ -1,48 +1,49 @@
+import React, { useState } from "react";
+
 import * as S from "./styles";
 
-import { animateScroll } from 'react-scroll'
- 
+import {Link} from "react-scroll";
+
 const MenuLinks: React.FC = () => {
   const linksMenu = [
     {
       name: "Home",
-      link: "#home"
+      link: "home"
     },
     {
       name: "About",
-      link: "#about"
+      link: "about"
     },
     {
       name: "skills",
-      link: "#skills"
+      link: "skills"
     },
     {
       name: "Appliance",
-      link: "#appliance"
+      link: "appliance"
     },
     {
       name: "Contact",
-      link: "#contact"
+      link: "contact"
     }
   ];
-  
+
   return (
     <S.Navbar>
       <S.NavMenu>
         {linksMenu.map((value, index) => {
           return (
             <S.NavItem key={index}>
-              <S.NavLink 
+              <Link
                 to={value.link}
-		smooth={true}
-		duration={500}
+                activeClass="active"
                 spy={true}
-                exact={true}
+                smooth={true}
                 offset={-80}
-                                
-              > 
+                duration={400}
+              >
                 {value.name}
-              </S.NavLink>
+              </Link>
             </S.NavItem>
           );
         })}

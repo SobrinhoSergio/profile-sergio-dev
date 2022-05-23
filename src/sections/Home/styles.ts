@@ -1,59 +1,93 @@
 import styled from "styled-components";
-import { bg } from "../../assets";
+import { bg5 } from "../../assets";
 
 export const Home = styled.main`
-  background-image: url(${bg});
+  background-image: url(${bg5});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: color;
   background-attachment: fixed;
-  padding: 250px 0;
+  height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
   .principal {
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    color: var(--grey);
   }
 
-  .principal h2{
-    font-size: 4.5rem;
-    margin: 25px 0;
-    color: var(--color-headings);
+  .principal h2 {
+    font-size: 3.5rem;
+    margin: 30px 0;
     font-style: italic;
-    border-right: 3px solid rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
   }
 
+  @keyframes rotacao {
+    0% {
+      transform: rotate(0deg);
+    }
 
-  @keyframes blinkCursor {
-      from {
-          border-right-color: rgba(255, 255, 255, 0.75);
-      }
-      to {
-          border-right-color: transparent;
-      }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  .animation {
+    animation: rotacao 2s infinite linear;
   }
 
   .principal h1 {
     font-size: 3.5rem;
-    color: var(--grey);
   }
 
-  @media (max-width: 700px){
+  .mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
 
-    .principal h2{
-      font-size: 3.5rem;
+  }
+
+  .mouse-wheel {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+  }
+
+  @keyframes move-wheel {
+    0% {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(1rem);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .principal h2 {
+      font-size: 3rem;
       margin: 20px 0;
     }
-  
-    .principal h1{
+
+    .principal h1 {
       font-size: 2.5rem;
     }
   }
