@@ -83,12 +83,12 @@ export const Home = styled.main`
 
   @media (max-width: 700px) {
     .principal h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 20px 0;
     }
 
     .principal h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 `;

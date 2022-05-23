@@ -17,6 +17,7 @@ export const Menu = styled.aside<INav>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 44; 
 
   .dark-mode {
     display: none;

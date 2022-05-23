@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import * as S from "./styles";
 
-import {Link} from "react-scroll";
+import Link from "react-scroll";
 
 const MenuLinks: React.FC = () => {
   const linksMenu = [

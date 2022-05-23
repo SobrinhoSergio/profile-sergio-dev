@@ -7,7 +7,7 @@ interface INav {
 export const StyledBurger = styled.div<INav>`
   width: 4rem;
   height: 4rem;
-  z-index: 20;
+  z-index: 55;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
