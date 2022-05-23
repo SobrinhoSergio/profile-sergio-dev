@@ -13,4 +13,9 @@ declare module "animateScroll"{
 }
 
 
+declare module "Link"{
+	export default any;
+}
+
+
 
