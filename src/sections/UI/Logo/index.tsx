@@ -1,5 +1,5 @@
 import { Logo } from "./styles";
-import { Link } from "react-scroll";
+import Link from "react-scroll";
 
 const Lg: React.FC = () => {
   return (
